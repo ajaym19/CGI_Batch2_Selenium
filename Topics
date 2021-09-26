@@ -1,0 +1,24 @@
+
+
+Action Class
+Actions Class and Action Interface
+Methods for handling Keyboard and Mouse based interactions
+Testing Drag and Drop and Mouse Hover functionality using Actions Class
+Synchronization
+
+Pending Items
+
+Scrolling on a web page using JavaScriptExecutor
+
+
+Monday:
+
+TestNG
+Rules to write TestNG
+Annotations, Grouping and Sequencing
+
+Tuesday: framework
+Why Page Object Model? What is Page Object Model? Advantages
+What is Page Factory?
+Introduction to Log4J
+Usage of Log4J
