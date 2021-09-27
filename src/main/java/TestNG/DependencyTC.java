@@ -8,7 +8,7 @@ public class DependencyTC {
 	@Test
 	public void login() {
 		System.out.println("Login TC");
-		Assert.assertTrue(true);
+		Assert.fail();
 	}
 	@Test(dependsOnMethods = "login")
 	public void sendFriendRequest() {

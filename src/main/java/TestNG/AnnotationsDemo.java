@@ -1,5 +1,6 @@
 package TestNG;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -22,22 +23,23 @@ public class AnnotationsDemo {
 	 * 
 	 * execution is based alphabetically
 	 */
-//	@Test
-//	public void xeroxMachineTest() {
-//		System.out.println("TC4: xerox machine test");
-//	}
-//	
-//	@Test
-//	public void homepageTest() {
-//		System.out.println("TC3: Validating Home Page Test");
-//	}
+	@Test (groups = "android")
+	public void xeroxMachineTest() {
+		System.out.println("TC4: xerox machine test");
+	}
 	
-	@Test
+	@Test (groups = "regression")
+	public void homepageTest() {
+		System.out.println("TC3: Validating Home Page Test");
+		Assert.fail();
+	}
+	
+	@Test(groups = "smoke")
 	public void validateTitle() {
 		System.out.println("TC1: Validating Title");
 	}
 	
-	@Test
+	@Test(groups = "smoke")
 	public void validateLogin() {
 		System.out.println("TC2: Validating Login Feature");
 	}
